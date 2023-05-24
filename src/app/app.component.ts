@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FetchService } from './fetch.service'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'warCardGame';
+  newdata:any;
+    constructor(private _apiservie:FetchService){}
+    ngOnInit(){
+      this._apiservie.getdata().subscribe(res=>{
+        this.newdata=res;
+      })
+    }
+  
 }
