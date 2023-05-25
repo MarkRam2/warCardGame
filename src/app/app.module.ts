@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PlayingFieldComponent } from './playing-field/playing-field.component';
+import { ChallengeAreaComponent } from './challenge-area/challenge-area.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PlayingFieldComponent
+    PlayingFieldComponent,
+    ChallengeAreaComponent
   ],
   imports: [
     BrowserModule,

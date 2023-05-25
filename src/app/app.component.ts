@@ -11,7 +11,7 @@ export class AppComponent {
   newdata:any;
     constructor(private _apiservie:FetchService){}
     ngOnInit(){
-      this._apiservie.getdata().subscribe(res=>{
+      this._apiservie.getDeck().subscribe(res=>{
         this.newdata=res;
       })
     }
